@@ -15,26 +15,6 @@ export const authOptions = {
   session : {
     strategy : "jwt"
   }
-  //   callbacks: {
-  //     async signIn({ user, account, profile }) {
-  //       if (!account) {
-  //         throw new Error("Account is undefined");
-  //       }
-  //       return true;
-  //     },
-  //     async session({ session, token }) {
-  //       if (token && token.id) {
-  //         session.user.id = token.id;
-  //       }
-  //       return session;
-  //     },
-  //     async jwt({ token, user }) {
-  //       if (user) {
-  //         token.id = user.id;
-  //       }
-  //       return token;
-  //     },
-  //   },
 };
 
 const handler = NextAuth(authOptions);

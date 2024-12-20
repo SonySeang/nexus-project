@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 import PostForm from "@/components/post-form";
 
-function Page(props) {
-    return (
-        <PostForm actionType="create"/>
-    );
+function Page() {
+  return <PostForm actionType="create" />;
 }
 
 export default Page;

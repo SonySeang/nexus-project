@@ -4,8 +4,6 @@ import RecentlyPost from "@/components/home-page/recently-post";
 import PostCard from "@/components/post-card";
 import Link from "next/link";
 import { getServerSession } from "next-auth";
-import { Button } from "@/components/ui/button";
-
 export default async function HomePage() {
   const session = await getServerSession();
   if (!session) {
@@ -20,14 +18,12 @@ export default async function HomePage() {
     <div className="grid grid-cols-3">
       <div className="col-start-1 col-span-2">
         <ContentBlock className="m-2">
-          <Link href="/dashboard/post-detail">
-            <PostCard />
-          </Link>
+            <PostCard actionType="" />
         </ContentBlock>
       </div>
-      <div className="col-start-3 col-span-1">
-        <ContentBlock className=" bg-blue-400 border-2 ml-2 mt-2 ">
-          <RecentlyPost />a
+      <div className="col-start-3 col-span-1 bg-green-300">
+        <ContentBlock className=" bg-blue-400 border-2 ml-2 mt-2">
+          <RecentlyPost />
         </ContentBlock>
       </div>
     </div>

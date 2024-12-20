@@ -1,0 +1,21 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=WebStorm
+
+###
+PATCH localhost:3000/api/post/1
+Content-Type: application/json
+
+{
+  "title": "Updated title",
+  "content": "Updated content"
+}
+
+###
+GET http://localhost:3000/api/post/1
+
+###
+GET http://localhost:3000/api/post/1
+
+###
+DELETE http://localhost:3000/api/post/cm4wh2cuq0001rxtikupaeny0
