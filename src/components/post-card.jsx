@@ -13,7 +13,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function PostCard({ actionType }) {
   return (
-    <ScrollArea>
+    <ScrollArea className="h-[calc(100vh-4rem)]">
       <Card className="w-full max-w-4xl mx-auto">
         <CardHeader className="flex flex-row items-center gap-4">
           <Avatar>
