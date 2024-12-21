@@ -21,7 +21,7 @@ export default async function HomePage() {
             <PostCard actionType="" />
         </ContentBlock>
       </div>
-      <div className="col-start-3 col-span-1 bg-green-300">
+      <div className="col-start-3 col-span-1 ">
         <ContentBlock className=" bg-blue-400 border-2 ml-2 mt-2">
           <RecentlyPost />
         </ContentBlock>
